@@ -73,7 +73,10 @@ public class DefaultEncodedValueFactory implements EncodedValueFactory {
             return Lanes.create();
         } else if (Footway.KEY.equals(name)) {
             return Footway.create();
-        } else if (OSMWayID.KEY.equals(name)) {
+        } else if (AirQuality.KEY.equals(name)) {
+            return AirQuality.create();
+        }
+        else if (OSMWayID.KEY.equals(name)) {
             return OSMWayID.create();
         } else if (MtbRating.KEY.equals(name)) {
             return MtbRating.create();
