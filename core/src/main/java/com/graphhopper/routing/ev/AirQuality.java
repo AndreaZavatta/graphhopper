@@ -22,7 +22,7 @@ import com.graphhopper.util.Helper;
 
 public enum AirQuality {
     MISSING,GOOD, MODERATE, POOR;
-    public static final String KEY = "airQuality";
+    public static final String KEY = "air_quality";
 
     public static EnumEncodedValue<AirQuality> create() {
         return new EnumEncodedValue<>(KEY, AirQuality.class);
