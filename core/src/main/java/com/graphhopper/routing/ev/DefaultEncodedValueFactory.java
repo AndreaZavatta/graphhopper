@@ -23,6 +23,7 @@ public class DefaultEncodedValueFactory implements EncodedValueFactory {
 
     @Override
     public EncodedValue create(String name, PMap properties) {
+        System.out.println("sono andrea -> name: "+name);
         if (Roundabout.KEY.equals(name)) {
             return Roundabout.create();
         } else if (GetOffBike.KEY.equals(name)) {
@@ -73,6 +74,8 @@ public class DefaultEncodedValueFactory implements EncodedValueFactory {
             return Lanes.create();
         } else if (Footway.KEY.equals(name)) {
             return Footway.create();
+        }else if (Pollution.KEY.equals(name)){
+            return Pollution.create();
         } else if (OSMWayID.KEY.equals(name)) {
             return OSMWayID.create();
         } else if (MtbRating.KEY.equals(name)) {
